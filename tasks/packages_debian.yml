@@ -4,8 +4,8 @@
   apt: name=midolman state=latest install_recommends=no update_cache=yes
 
 - name: Install midonet client
-  apt: name=python-midonetclient state=present
+  apt: name=python-midonetclient state=latest
 
 - name: Install MEM jmxscraper
-  apt: name=midonet-jmxscraper state=present
+  apt: name=midonet-jmxscraper state=latest
   when: mem_jmxscraper
